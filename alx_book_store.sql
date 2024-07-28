@@ -25,7 +25,7 @@
     order_id PRIMARY KEY,
     customer_id INT,
     order_date DATE,
-    Foreign KEY(customer_id) REFERENCES Customers(customer_id)
+    Foreign KEY (customer_id) REFERENCES Customers(customer_id)
  )
 
 
