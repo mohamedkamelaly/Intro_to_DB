@@ -10,3 +10,8 @@ try:
     print("Database 'alx_book_store' created successfully!")
 except:
     print("Please Check credentials")
+
+mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+mycursor.close()
+mydb.close()
