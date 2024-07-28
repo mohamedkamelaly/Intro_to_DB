@@ -25,7 +25,7 @@
     order_id PRIMARY KEY,
     customer_id INT,
     order_date DATE,
-    Foreign Key (customer_id) REFERENCES Customers(customer_id)
+    Foreign KEY(customer_id) REFERENCES Customers(customer_id)
  )
 
 
@@ -33,7 +33,7 @@ CREATE Table IF NOT EXISTS Order_Details(
     orderdetail_id  PRIMARY KEY,
     order_id INT,
     book_id INT,
-    Foreign Key (order_id) REFERENCES Orders(order_id),
-    Foreign Key (book_id) REFERENCES Books(book_id),
+    Foreign KEY (order_id) REFERENCES Orders(order_id),
+    Foreign KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE
 )
