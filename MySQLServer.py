@@ -8,7 +8,7 @@ try:
         database = 'mysql'
     )
     print("Database 'alx_book_store' created successfully!")
-except:
+except mysql.connector.Error:
     print("Please Check credentials")
 
 mycursor = mydb.cursor()
